@@ -2,13 +2,9 @@ name: Websocket mock sever with Cypress
 run-name: ${{ github.actor }} ws mock server with cypress 🚀
 on:
   push:
-    branches: [ master ]
-    paths:
-      - 'src/**' # Run workflow for any changes in the /src/how-to-mock-websocket directory
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
-    paths:
-      - 'src/**' # Run workflow for any changes in the /src/how-to-mock-websocket directory
+    branches: [ main ]
 
 jobs:
   unit_tests:
